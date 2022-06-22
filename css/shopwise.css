@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head h1{
+    text-align: center;
+    border-bottom: 1px solid red;
+    width: 300px;
+    margin:20px  auto;
+
+}
+.head hr{
+
+}
+.chairs{
+    width: 80%;
+    margin:40px auto;
+    /* background-color: aqua; */
+    height: 500px;
+}
+.chairs .item {
+   width: 22.5%;
+   height: 100%;
+   margin: 0px 1%;
+   float: left;
+   overflow: hidden;
+   border: 1px solid lightgray;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+  
+}
+.chairs .item .itemimg{
+    width: 100%;
+    height: 70%;
+    background-color: aqua;
+    position: relative;
+}
+.chairs .item .itemimg img{
+    width: 100%;
+    height: 100%;
+   
+}
+.chairs .item .itemimg .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chairs .item .itemimg:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.overlay .icon{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    visibility: hidden;
+}
+.overlay .icon i{
+    color: gray;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 2px;
+}
+.overlay .icon i:hover{
+    color: white;
+    background-color: #f74f7f;
+    border: 1px solid #f74f7f;
+}
+.chairs .item .itemimg:hover .icon{
+    visibility: visible;
+}
+
+.chairs .item h1{
+    text-align: center;
+}
+.chairs .item p{
+    display: inline-block;
+   
+
+}
+.chairs .item .price{
+    color: red;
+    font-size: 20px;
+    margin-left: 50px;
+
+    
+}
+.chairs .item .oldprice{
+    text-decoration: line-through;
+    color: gray;
+}
+.chairs .item button{
+  background-color: #f74f7f;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 1px solid #f74f7f;
+  border-radius:100px ;
+  -webkit-border-radius:100px ;
+  -moz-border-radius:100px ;
+  -ms-border-radius:100px ;
+  -o-border-radius:100px ;
+  position:absolute;
+  bottom: -220px;
+  left:50px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.chairs .item button:hover{
+    color: #f74f7f;
+    background-color: white;
+    
+}
+.chairs .item button i{
+    margin-right:10px;
+}
+.chairs .item .itemimg:hover button{
+  bottom:-110px;
+}
+
+
