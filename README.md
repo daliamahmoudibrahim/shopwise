@@ -1,1 +1,2 @@
-# chairs images with hover and make simple animation
+# chairs images
+ chairs images with hover and make simple animation
